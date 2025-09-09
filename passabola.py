@@ -95,7 +95,7 @@ def buscar_por_posicao(): #Filtro para encontrar jogador na posição desejada.
         if jogadora['posicao'].lower() == posicao.lower():
             encontradas.append(jogadora)
     if encontradas:
-        print(f"\n=== Jogadoras na posição {posicao.upper()} ===")
+        print(f"\n=== Jogadoras na posição {posicao.capitalize()} ===")
         for jogadora in encontradas:
             print(f"- {jogadora['nome']} ({jogadora['idade']} anos) | Clube: {jogadora['clube']}")
     else:
@@ -123,7 +123,7 @@ def buscar_por_clube(): # Filtro para encontrar jogador no clube desejado.
         if jogadora['clube'].lower() == clube.lower():
             encontradas.append(jogadora)
     if encontradas:
-        print(f"\n=== Jogadoras do clube {clube.upper()} ===")
+        print(f"\n=== Jogadoras do clube {clube.capitalize()} ===")
         for jogadora in encontradas:
             print(f"- {jogadora['nome']} ({jogadora['idade']} anos) | Posição: {jogadora['posicao']}")
     else:
@@ -138,7 +138,7 @@ def buscar_por_regiao(): # Filtro para encontrar jogador na região desejada.
         if jogadora['regiao'].lower() == regiao.lower():
             encontradas.append(jogadora)
     if encontradas:
-        print(f"\n=== Jogadoras da região {regiao.upper()} ===")
+        print(f"\n=== Jogadoras da região {regiao.capitalize()} ===")
         for jogadora in encontradas:
             print(f"- {jogadora['nome']} ({jogadora['idade']} anos) | Posição: {jogadora['posicao']} | Clube: {jogadora['clube']}")
     else:
